@@ -5,6 +5,6 @@ Get-aduser -Filter 'enabled -eq $true' | select Name | sort Name | Export-Csv -P
 
 From Local Exchange Server Management Console:
 
-$Users = Get-Content "C:\Users\Xeroxitadmin\Desktop\Users.csv"
+$Users = Get-Content "C:\Users\user\Desktop\Users.csv"
 
 ForEach ($user in $Users) { Remove-UserPhoto $user -confirm:$false }
